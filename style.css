@@ -1,6 +1,6 @@
 html {
-	background: #E5E5DF;
-	color: #423C33;
+	background: #3498db;
+	color: #ecf0f1;
 	line-height: 1.4;
 	font-size: 120%;
 	font-family: "freight-sans-pro-1","freight-sans-pro-2", sans-serif;
@@ -13,12 +13,14 @@ body {
 
 h1 {
 	font-weight: 400;
+	font-size: 1em;
+	text-align: left;
 }
 
 input[type="text"], input[type="email"], input[type="number"]{
 	display: block;
 	width: 100%;
-	border-top: 1px solid rgb(210,210,210);
+	border-top: none;
 	border-right: none;
 	border-bottom: none;
 	border-left: none;
@@ -48,4 +50,30 @@ input[type="text"], input[type="email"], input[type="number"]{
 #result:after {
 	content: 'kg';
 	font-size: 0.25em;
+}
+
+.tips {
+	font-size: 75%;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	color: rgba(255,255,255,0.5);
+}
+
+.hide {
+	opacity: 0;
+}
+
+.appear {
+	-webkit-animation: appear 1s ease-in;
+}
+
+@-webkit-keyframes appear {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }

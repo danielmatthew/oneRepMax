@@ -25,7 +25,11 @@
 
 	function drawResult() {
 		var weight = input.value;
+		var tips = document.getElementsByClassName('tips');
+
 		result.innerHTML = calculateUpperBodyMax(weight);
+		tips[0].classList.remove('hide');
+		tips[0].classList.add('appear');
 	}
 
 	// Clears specified text input on submission
