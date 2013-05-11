@@ -30,6 +30,7 @@
 		result.innerHTML = calculateUpperBodyMax(weight);
 		tips[0].classList.remove('hide');
 		tips[0].classList.add('appear');
+		result.classList.add('pulse');
 	}
 
 	// Clears specified text input on submission

@@ -69,11 +69,27 @@ input[type="text"], input[type="email"], input[type="number"]{
 	-webkit-animation: appear 1s ease-in;
 }
 
+.pulse {
+	-webkit-animation: pulse 2s 3;
+}
+
 @-webkit-keyframes appear {
 	from {
 		opacity: 0;
 	}
 	to {
 		opacity: 1;
+	}
+}
+
+@-webkit-keyframes pulse {
+	0% {
+		-webkit-transform: scale(1);
+	}
+	50% {
+		-webkit-transform: scale(1.5);
+	}
+	100% {
+		-webkit-transform: scale(1);
 	}
 }
