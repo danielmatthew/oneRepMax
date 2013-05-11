@@ -1,0 +1,44 @@
+html {
+	background: #E5E5DF;
+	color: #423C33;
+	line-height: 1.4;
+	font-size: 120%;
+	font-family: "freight-sans-pro-1","freight-sans-pro-2", sans-serif;
+}
+
+body {
+	margin: 0 auto;
+	width: 90%;
+}
+
+h1 {
+	font-weight: 400;
+}
+
+input[type="text"], input[type="email"], input[type="number"]{
+	display: block;
+	width: 100%;
+	border-top: 1px solid rgb(210,210,210);
+	border-right: none;
+	border-bottom: none;
+	border-left: none;
+	float: left;
+	height: 44px;
+	margin-bottom: 0.5em;
+	padding: 3px 5px;
+
+	font-family: inherit;
+	font-size: 1em;
+
+	border-radius: 0;
+	-webkit-appearance: none;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	
+}
+
+#result {
+	font-size: 10em;
+	line-height: 1;
+	text-align: center;
+}

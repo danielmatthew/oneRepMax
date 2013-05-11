@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+	<title>One Rep Max</title>
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="initial-scale=1.0">
+
+	<link rel="icon" href="assets/img/touch-icon-iphone-retina.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/img/touch-icon-iphone-retina.png" />
+	<link rel="apple-touch-startup-image" href="assets/img/beers@2x.png" sizes="640x920"/>
+	<link rel="apple-touch-startup-image" href="assets/img/beers_large@2x.png" sizes="640x1096"/>
+	
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" /> 
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>One Rep Max</h1>
+	<form>
+		<input type="number" pattern="\d*" name="max" id="max" placeholder="Heaviest weight can be lifted 4-6 times">
+	</form>
+	<h2 id="result">0</h2>
+	<script async src="app.js"></script>
+	<script async type="text/javascript">
+	  (function() {
+	    var config = {
+	      kitId: 'jhq4goh',
+	      scriptTimeout: 3000
+	    };
+	    var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+	  })();
+	</script>
+</body>
+</html>
