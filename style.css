@@ -38,7 +38,14 @@ input[type="text"], input[type="email"], input[type="number"]{
 }
 
 #result {
-	font-size: 10em;
+	margin: 0;
+	font-size: 6em;
+	font-weight: 300;
 	line-height: 1;
 	text-align: center;
+}
+
+#result:after {
+	content: 'kg';
+	font-size: 0.25em;
 }
