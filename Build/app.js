@@ -25,11 +25,16 @@
 
 	function drawResult() {
 		var weight = input.value;
-		var tips = document.getElementsByClassName('tips');
+		var tipsList = document.getElementsByClassName('tips');
+		var tips = document.getElementsByTagName('li');
 
 		result.innerHTML = calculateUpperBodyMax(weight);
-		tips[0].classList.remove('hide');
-		tips[0].classList.add('appear');
+		tipsList[0].classList.remove('hide');
+
+		for (var i = 0; i < tips.length; i++) {
+			tips[i].classList.add('appear');
+		}
+
 		result.classList.add('pulse');
 	}
 
