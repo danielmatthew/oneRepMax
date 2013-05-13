@@ -8,9 +8,10 @@
 	<meta name="viewport" content="initial-scale=1.0">
 
 	<link rel="icon" href="assets/img/touch-icon-iphone-retina.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/img/touch-icon-iphone-retina.png" />
-	<link rel="apple-touch-startup-image" href="assets/img/beers@2x.png" sizes="640x920"/>
-	<link rel="apple-touch-startup-image" href="assets/img/beers_large@2x.png" sizes="640x1096"/>
+	<link rel="apple-touch-icon" sizes="114x114" href="touch-icon-iphone-retina.png" />
+	
+	<!-- <link rel="apple-touch-startup-image" href="assets/img/beers@2x.png" sizes="640x920"/> -->
+	<!-- <link rel="apple-touch-startup-image" href="assets/img/beers_large@2x.png" sizes="640x1096"/> -->
 	
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="black" /> 
@@ -20,7 +21,7 @@
 <body>
 	<h1>One Rep Max</h1>
 	<form>
-		<input type="number" pattern="\d*" name="max" id="max" placeholder="Heaviest weight can be lifted 4-6 times">
+		<input type="range" min="0" max="240" step="10" value="50" pattern="\d*" name="max" id="max" placeholder="Heaviest weight can be lifted 4-6 times">
 	</form>
 	<h2 id="result">0</h2>
 	<ul class="tips hide">

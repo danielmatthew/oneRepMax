@@ -11,6 +11,9 @@
 
 	function addEventListeners() {
 		input.addEventListener('keyup', drawResult, false);
+		input.addEventListener('mouseup', drawResult, false);
+		input.addEventListener('touchmove', drawResult, false);
+		input.addEventListener('touchend', drawResult, false);
 	}
 
 	function calculateUpperBodyMax(weight) {
